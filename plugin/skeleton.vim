@@ -21,5 +21,5 @@ endif
 
 augroup sigma_skeleton
   au!
-  autocmd BufEnter * silent! if &buftype=='' | call skeleton#load(expand('%:p')) | endif
+  autocmd BufEnter * silent! if &buftype == '' && &ft != 'startify' && &ft != 'dashboard' | call skeleton#load(expand('%:p')) | endif
 augroup END
