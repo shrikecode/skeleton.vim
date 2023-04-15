@@ -7,7 +7,7 @@
 " autoload/skeleton.vim
 
 function! skeleton#load(file_path)
-    if !filereadable(a:file_path) || (g:sigma_skeleton_fill == 1 && getfsize(a:file_path) < 1)
+    if a:file_path != '' && (!filereadable(a:file_path) || (g:sigma_skeleton_fill == 1 && getfsize(a:file_path) < 1))
         let s:file_name = split(a:file_path, '/')[-1]
         let s:file_dir = split(a:file_path, '/')[-2]
         let s:file_ext = split(s:file_name, '\.')[-1]
