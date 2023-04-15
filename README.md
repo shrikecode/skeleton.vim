@@ -26,4 +26,9 @@ vim.g.sigma_skeleton_dir = '~/.vim/templates'
 vim.g.sigma_skeleton_fill = 0
 ```
 
-This is a very early version, it might not work as expected.
+This is a very early version, it might not work as expected, but it should.
+Feel free to create issues if something goes wrong.
+
+## Similar projects / inspirations
+
+- [vim-skeleton](https://github.com/noahfrederick/vim-skeleton)

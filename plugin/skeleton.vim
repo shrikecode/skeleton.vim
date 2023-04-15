@@ -21,5 +21,5 @@ endif
 
 augroup sigma_skeleton
   au!
-  autocmd BufNewFile *.* silent! 0r skeleton#load(%:p)
+  autocmd BufEnter * silent! if &buftype=='' | call skeleton#load(expand('%:p')) | endif
 augroup END
