@@ -26,8 +26,11 @@ vim.g.sigma_skeleton_dir = '~/.vim/templates'
 vim.g.sigma_skeleton_fill = 0
 ```
 
-This is a very early version, it might not work as expected, but it should.
-Feel free to create issues if something goes wrong.
+## Known issues
+
+With `g:sigma_skeleton_fill = 1`, if a buffer for a file that was deleted is open or an unsaved buffer is open,
+it will be filled with matched template every time it is visited. That is likely not an issue that can be handled,
+so use this option with care and prepare from some mess from time to time.
 
 ## Similar projects / inspirations
 
