@@ -1,6 +1,20 @@
-# sigma-skeleton
+# skeleton.vim
 
 A dead simple plugin for easy Vim and Neovim file templates.
+
+## Installation
+
+### Vim-plug
+
+```vim
+Plug 'shrikecode/skeleton.vim'
+```
+
+### Packer
+
+```lua
+use 'shrikecode/skeleton.vim'
+```
 
 ## Usage
 
